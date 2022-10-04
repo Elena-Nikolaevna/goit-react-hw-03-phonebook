@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import css from './ContactList.module.css';
 
 const ContactList = ({ children }) => (
@@ -11,7 +11,7 @@ const ContactList = ({ children }) => (
 );
 
 ContactList.propTypes = {
-    children: propTypes.node.isRequired,
+    children: PropTypes.node.isRequired,
 };
 
 export default ContactList;
