@@ -28,6 +28,9 @@ class App extends Component {
     }
   }
 
+  /* componentWillUnmount() {
+    clearInterval(this.parsedContacts);
+  } */
   ////==========================================================================================
 
   addContacts = data => {
