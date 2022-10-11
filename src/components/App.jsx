@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import ContactForm from './ContactForm/ContactForm';
 import Filter from './Filter/Filter';
 import ContactList from './ContactList/ContactList';
-import ContactItem from './ContactItem/ContactItem';
+//import ContactItem from './ContactItem/ContactItem';
 
 class App extends Component {
   state = {
@@ -75,12 +75,10 @@ class App extends Component {
           <ContactForm onSubmit={this.addContacts} />
           <h2 className={s.title}>Contacts</h2>
           <Filter value={filter} onChange={this.changeFilter} />
-          <ContactList>
-            <ContactItem
-              contacts={visibleContact}
-              onDeleteContact={this.deleteContact}
-            />
-          </ContactList>
+          <ContactList
+            contacts={visibleContact}
+            onDeleteContact={this.deleteContact}
+          />
         </div>
       </>
     );
